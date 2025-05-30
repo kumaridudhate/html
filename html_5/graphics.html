@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Graphics</h3>
+    <svg>
+      <!--
+        -svg(scalable vector graphics) defines vector-based graphics in xml format.
+        -it defines acontiner for graphical representation.
+      -->
+
+    <circle cx="80px" cy="90px" r="70px"/>
+    <!--
+        -cx  x cordinates (defines value=0)
+        -cy  y cordinates (defines value=0)
+        -r   radius of circule
+    -->
+
+  </svg>
+
+<svg>
+    <ellipse cx="80px" cy="90px" ry="70px"/>
+    <!--
+        -cx x cordinates( default value=0)
+        -cy y cordinates(default value=0)
+        -rx   horizontal radius
+        -ry  vertical radius
+
+    -->
+  </svg>
+
+<svg>
+  <rect height="90px" width="60px"/>
+</svg>
+        
+
+    <!--audio tag-->
+
+    <audio controls autoplay loop muted>
+     <!--
+        
+       - audio tag is used to play audio files/contents/stream.
+       - it supports:mp3,wav,and OGG.
+       - attributes:
+
+             - controls: provides audio controls
+             - Autoplay: provides playing the audio as it is ready.
+             - loop:     after finishing the audio it repeats to the  begining points.
+
+      -->
+             
+      <source src="./assets/audio/playing_in_color.mp3" type="audio/mpeg">
+            <!--
+                source tag is specified to link resource related th video ,audio and picture.
+            -->       
+       
+       
+     </audio>
+
+
+
+    <!--video tag-->
+    <video controls loop autoplay muted>
+        <!--
+          -A video tag is used to play video contents or stream.
+          -video format is supports
+              - mp4
+              - webm
+              - OGG
+
+              - attributs:
+              - controls : video controls
+              - loop     : after finishing the video it repeats to the begining point.
+              - autoplay : video start whenever its completely loaded.
+              - muted    : muted audio when the video is played.
+          
+        -->
+          
+        <source src="./assets/vid/dubai.mp4" type="video/mp4"> <!--video source-->
+        <track kind="captions" srclang="eng" label="English-sub" default src="./Assets/vid/subtitle.vtt">
+
+        <!--
+            - track tag which is used to define the track of the video file.
+            - used for specifying the subtitles or caption for the video.
+            - Needs the server, to run the track.
+            
+        
+       -->
+
+    </video>
+</svg>
+</body>
+</html>

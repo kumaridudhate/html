@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <!-- forms
+          
+        - form are created for collecting the user input
+        - login/ signup/ google-forms/
+        - forms  uses an attribute  named as action key and the directed path as value 
+        - on using action attribute the button will start working for you 
+        
+        -->
+       <h1>form</h1>
+
+       <form action="">
+
+        <label for="name"> name:</label>
+               
+               <!--label is used  in html for referring to the input field
+               for is used for mapping with the input elements id name
+               where for is the keyand id name is value
+               
+               eg: for="name" where for is the key and 'name' is value
+               
+               
+               -->
+
+               <input type="trxt" placeholder="enter your name" id="name">
+               <br>
+               <br>
+
+               <!--input is used to collect users information
+               by default it is of type= 'tex'
+
+               - text
+               - number
+               - password
+               - email
+               - file
+               - url
+               - date
+               - colour
+               - submit
+               - reset
+               - radio
+               - checkbox
+               
+               -->
+
+               <label for="number">ph-no:</label>
+               <input type="number"placeholder="Enter phone number" id="number">
+
+               <br>
+               <br>
+
+               <label for="email"> email</label>
+               <input type="email" placeholder="Enter email" id="email" required>
+
+               <br>
+               <br>
+
+               <label for="date">DOB:</label>
+               <input type="date" id="date">
+
+               <br>
+               <br>
+
+               <label for="password">password<span style="color: red; font-size: 15px;">*</span></label>
+               <input type="password" placeholder="enter the password" id="password">
+
+               <br>
+               <br>
+
+               <label for="file"> resume:</label>
+               <input type="file" id="file">
+
+               <br>
+               <br>
+
+               <label for="file">upload image:</label>
+               <input type="file" multiple id="file">
+
+               <br>
+               <br>
+
+               <label for="url">github</label>
+               <input type="url" id="url" placeholder="url-link">
+
+               <br>
+               <br>
+
+               <label for="">gender:</label>
+
+               <label for="male">male</label>
+               <input type="radio" value="male" id="male" name="gender">
+               <label for="female">female</label>
+               <input type="radio" value="female" id="female" name="gender">
+               <label for="others">others</label>
+               <input type="radio" value="others" id="others" name="gender">
+
+               <br>
+               <br>
+        </form>
+
+    </div>
+</body>
+</html>
